@@ -29,18 +29,20 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <Button fx:id="btn_berechnen" mnemonicParsing="false" onAction="#showMessage" text="berechnen" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-      <TextField fx:id="txt_ausgangswert" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-      <TextField fx:id="txt_endwert" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-      <Label fx:id="lbl_ausgangswert" text="Ausgangswert" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Label fx:id="lbl_endwert" text="berechneter Wert" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-      <Button fx:id="btn_clear" mnemonicParsing="false" onAction="#clear" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-      <Label fx:id="lbl_endwaehrung" text="Endwährung" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label fx:id="lbl_ausgangswaehrung" text="Ausgangswährung" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <ComboBox fx:id="cbb_ausgangswaehrung" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="lbl_endwaehrung" text="Endwährung" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <ComboBox fx:id="cbb_endwaehrung" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label fx:id="lbl_ausgangswert" text="Ausgangswert" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="txt_ausgangswert" GridPane.columnIndex="2" GridPane.rowIndex="5" />
       <DatePicker fx:id="dtp_datepicker" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Button fx:id="btn_berechnen" mnemonicParsing="false" onAction="#showMessage" text="berechnen" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <Label fx:id="lbl_endwert" text="berechneter Wert" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <TextField fx:id="txt_endwert" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <Button fx:id="btn_clear" mnemonicParsing="false" onAction="#clear" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+      <Button fx:id="btn_end" mnemonicParsing="false" onAction="#end" text="Beenden" GridPane.columnIndex="2" GridPane.rowIndex="12" />
    </children>
 </GridPane>
